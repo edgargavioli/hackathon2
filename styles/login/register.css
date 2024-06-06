@@ -1,0 +1,61 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    
+    background-image: url("./Ellipse\ 4.svg"), url("./background-footer.svg");
+    background-repeat: no-repeat;
+    background-position: top right, bottom right;
+    height: 100vh;
+
+}
+.section-form{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+.div-colum{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bpk-image{
+    margin-bottom: 60px;
+}
+.div-master{
+    display: flex;
+    justify-content: space-between; /* Espaça os itens entre as extremidades */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    width: 100%;
+    height: 100px; /* Ajuste conforme necessário */
+
+}
+.arrow-back{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    padding-top: 30px;
+    padding-left: 15px;
+    width: 30px;
+}
+.circle-red{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: end;
+    top: 0;
+    right: 0;
+}
+.form-config{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}

@@ -1,0 +1,38 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.div-correct{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.bg-correctconfig{
+    position: relative;
+    top: -100px;
+}
+.correct {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Posiciona a div relativa a .base */
+    top: 100px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+
+
+}
+h1{
+    font-size: 20px;
+    text-align: center;
+}
+p{
+    display: flex;
+    text-align: center;
+    font-size: 15px;
+}

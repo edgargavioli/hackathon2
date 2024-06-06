@@ -1,0 +1,194 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 1rem;
+}
+
+.footer-left,
+.footer-right {
+    margin: 0;
+    text-align: center;
+}
+
+.logo {
+    height: 30px;
+    width: auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgb(39, 60, 78);
+    color: #fff;
+}
+
+.hamburger-menu {
+    border: none;
+    background-color: rgb(39, 60, 78);
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: rgb(39, 60, 78);
+    border: 1px solid #fff;
+    padding: 10px;
+}
+
+.nav-menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-menu ul li {
+    margin: 5px 0;
+}
+
+.nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.comecar-aula {
+    background-color: rgb(39, 60, 78);
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 18;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+.terminar-aula {
+    background-color: rgb(201, 128, 146);
+    padding: 15px 30px;
+    color: #fff;
+    font-size: 18;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+}
+
+.pcentral {
+    font-size: 18;
+    color: black;
+    font-weight: bold;
+    text-align: center;
+}
+
+.plateralTexto {
+    color: black;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.plateral ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 10px;
+}
+
+.plateral ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plateral span {
+    color: black;
+    font-weight: bold;
+}
+
+.plateral ul li span {
+    margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+    .footer {
+        display: flex;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        justify-content: space-between;
+        align-items: flex-end;
+        background-color: rgb(39, 60, 78);
+        color: #fff;
+        padding: 10px;
+    }
+
+    .nav-menu {
+        display: flex;
+    }
+
+    .pcentral,
+    .plateral {
+        text-align: center;
+        padding: 0 10px;
+    }
+
+    .plateral ul li {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (min-width: 769px) {
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+        border: none;
+    }
+
+    .nav-menu ul {
+        display: flex;
+        gap: 20px;
+    }
+
+    .nav-menu ul li {
+        margin: 0;
+    }
+
+    .hamburger-menu {
+        display: none;
+    }
+}
+
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: rgb(39, 60, 78);
+    color: #fff;
+}
