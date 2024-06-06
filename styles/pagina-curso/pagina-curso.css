@@ -1,0 +1,66 @@
+.texto {
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 8px;
+}
+
+.carousel-wrap {
+  margin: 10px auto;
+  padding: 0 5%;
+  width: 80%;
+  position: relative;
+}
+
+.owl-carousel {
+    display: block;
+}
+
+/* fix blank or flashing items on carousel */
+.owl-carousel .item {
+  position: relative;
+  z-index: 100; 
+  -webkit-backface-visibility: hidden;
+}
+
+/* end fix */
+.owl-nav > div {
+  margin-top: -26px;
+  position: absolute;
+  top: 50%;
+  color: #cdcbcd;
+}
+
+.owl-nav i {
+  font-size: 52px;
+}
+
+.owl-nav .owl-prev {
+  left: -30px;
+}
+
+.owl-nav .owl-next {
+  right: -30px;
+}
+
+.ad-banner {
+    width: 100%; /* Use 100% width to cover the full width of the parent container */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f1f1f1; /* Background color for the banner */
+    text-align: center; /* Center text inside the banner */
+    padding: 20px 0; /* Vertical padding */
+    margin-top: 20px; /* Margin above the banner */
+}
+
+.ad-banner p {
+    margin: 0;
+    font-size: 18px; /* Font size */
+    color: #333; /* Text color */
+}
+
+h3 {
+    text-align: left;
+    padding-left: 15px;
+}

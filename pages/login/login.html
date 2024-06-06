@@ -4,47 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../styles/login/login.css">
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link rel="stylesheet" href="/styles/font/font.css">
     <title>Login</title>
     
 </head>
 <body>
-    <div>
-        <div>
-            <div class="firstline">
-                <img class="arrowb" width="20" height="20" src="/resources/arrow-back.svg" alt="Arrow Back">
-                <img class="redelipse" width="200" height="200" src="/resources/redelipse.svg" alt="Red Elipse">
-            </div>
-            <div class="logobpk">
-                <img width="140" height="140" src="/resources/logo_biopark.svg" alt="Logo BPK">
-            </div>
-
-            <div class="loginarea">
-                <form name="Login">
-                    <table class="form">
-                        <tr>
-                            <td>
-                                <input class="formcamp" type="text" name="email" placeholder="Email ou RA">
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>
-                                <input class="formcamp" type="password" name="senha" placeholder="Senha">
-                            </td>
-                        </tr>
-                    </table>
-                </form>
-                <div class="formtext">
-                    <text type="buttom">Esqueci minha senha</text>
+    <div class="Login_ADM">
+        <div class="firstline">
+            <img src="/resources/arrow-back.svg" class="arrow_back" onclick="window.location.href='../../index.html'">
+            <img src="/resources/redelipse.svg" class="Ellipsered">
+        </div>
+        <div class="logobox">
+            <img src="/resources/logo_biopark.svg" class="image-1">
+        </div>
+        <div class="loginarea">
+            <form name="Login">
+                <div class="formbox">
+                    <input class="formcamp" type="text" name="email" placeholder="Email ou RA">
+                    <input class="formcamp" type="password" name="senha" placeholder="Senha">
                 </div>
-                <div class="buttom">
-                    <text type="buttom" onclick="console.log('clicou')">Entrar</text>
-                </div>
+            </form>
+            <div class="textbuttonbox">
+                <text type="button" class="textbutton">Esqueci minha senha</text>
             </div>
         </div>
-        <div>
-            <img class="downelipse" width="320" height="200" src="/resources/elipse-desenhado.svg" alt="Elipse Desenhado">
+        <div class="buttonarea">
+            <button class="button" onclick="window.location.href='../pagina-curso/pagina-curso.html'">Entrar</button>
         </div>
+        <img src="/resources/elipse-desenhado.svg" class="footerloginarea">
     </div>
 </body>
+
 </html>

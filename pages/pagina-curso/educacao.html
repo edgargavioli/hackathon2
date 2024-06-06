@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha Jornada</title>
+    <style>
+      /* Adicione o estilo para o menu dropdown */
+      .dropdown-menu {
+          display: none; /* Escondido por padrão */
+          position: absolute;
+          background-color: #273C4E;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+          z-index: 1;
+          right: 0; /* Posiciona o menu para a esquerda */
+      }
+
+      .dropdown-menu a {
+          color: white;
+          padding: 12px 16px;
+          text-decoration: none;
+          display: block;
+      }
+
+      .dropdown-menu a:hover {
+          background-color: #1f2c3c;
+      }
+  </style>
+    <link rel="stylesheet" href="/styles/font/font.css" />
+    <link rel="stylesheet" href="/styles/pagina-curso/event.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <link rel="stylesheet" href="/styles/pagina-curso/pagina-curso.css" />
+</head>
+<body>
+    <nav class="nav-div">
+        <div class="div-logo-body">
+            <img src="/resources/bpk_logo.svg" alt="" />
+        </div>
+        <div class="div-right">
+          <img id="menu-icon" src="/resources/menu.svg" alt="">
+          <ul class="dropdown-menu left-align" id="dropdown-menu">
+              <li><a href="#">Inicio</a></li>
+              <li><a href="#">Cursos</a></li>
+              <li><a href="#">Meus Cursos</a></li>
+              <li><a href="#">Eventos</a></li>
+          </ul>
+        </div>
+    </nav>
+    <p class="texto">Educação</p>
+    <main>
+        <div class="carousel-wrap">
+            <div class="owl-carousel owl-carousel-2">
+                <div class="item">
+                    <img src="http://placehold.it/150x150" alt="Imagem 1" />
+                </div>
+                <!-- Repeat as needed -->
+            </div>
+        </div>
+
+
+        <div class="carousel-wrap">
+            <div class="owl-carousel owl-carousel-3">
+                <div class="item">
+                    <img src="http://placehold.it/150x150" alt="Imagem 1" />
+                </div>
+                <!-- Repeat as needed -->
+            </div>
+        </div>
+
+
+        <div class="carousel-wrap">
+            <div class="owl-carousel owl-carousel-4">
+                <div class="item">
+                    <img src="http://placehold.it/150x150" alt="Imagem 1" />
+                </div>
+                <!-- Repeat as needed -->
+            </div>
+        </div>
+
+
+        <div class="carousel-wrap">
+            <div class="owl-carousel owl-carousel-4">
+                <div class="item">
+                    <img src="http://placehold.it/150x150" alt="Imagem 1" />
+                </div>
+                <!-- Repeat as needed -->
+            </div>
+        </div>
+
+
+        <div class="carousel-wrap">
+            <div class="owl-carousel owl-carousel-4">
+                <div class="item">
+                    <img src="http://placehold.it/150x150" alt="Imagem 1" />
+                </div>
+                <!-- Repeat as needed -->
+            </div>
+        </div>
+
+    <footer>
+        <div class="div-footer">
+            <img src="/resources/bpk_logo.svg" alt="" />
+        </div>
+        <div class="div-direitos-reservados">
+            <p>BIOPARK © 2024 - Todos os Direitos Reservados</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel-1").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                navText: [
+                    "<i class='fa fa-caret-left'></i>",
+                    "<i class='fa fa-caret-right'></i>",
+                ],
+                autoplay: true,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 3,
+                    },
+                    1000: {
+                        items: 5,
+                    },
+                },
+            });
+
+            $(".owl-carousel-2").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                navText: [
+                    "<i class='fa fa-caret-left'></i>",
+                    "<i class='fa fa-caret-right'></i>",
+                ],
+                autoplay: true,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 3,
+                    },
+                    1000: {
+                        items: 5,
+                    },
+                },
+            });
+
+            $(".owl-carousel-3").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                navText: [
+                    "<i class='fa fa-caret-left'></i>",
+                    "<i class='fa fa-caret-right'></i>",
+                ],
+                autoplay: true,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 3,
+                    },
+                    1000: {
+                        items: 5,
+                    },
+                },
+            });
+
+            $(".owl-carousel-4").owlCarousel({
+                loop: true,
+                margin: 10,
+                nav: true,
+                navText: [
+                    "<i class='fa fa-caret-left'></i>",
+                    "<i class='fa fa-caret-right'></i>",
+                ],
+                autoplay: true,
+                autoplayHoverPause: true,
+                responsive: {
+                    0: {
+                        items: 1,
+                    },
+                    600: {
+                        items: 3,
+                    },
+                    1000: {
+                        items: 5,
+                    },
+                },
+            });
+        });
+    </script>
+    <script>
+      document.getElementById("menu-icon").addEventListener("click", function() {
+          var dropdownMenu = document.getElementById("dropdown-menu");
+          if (dropdownMenu.style.display === "block") {
+              dropdownMenu.style.display = "none";
+          } else {
+              dropdownMenu.style.display = "block";
+          }
+      });
+
+      // Fechar o menu dropdown se o usuário clicar fora dele
+      window.onclick = function(event) {
+          if (!event.target.matches('#menu-icon')) {
+              var dropdowns = document.getElementsByClassName("dropdown-menu");
+              for (var i = 0; i < dropdowns.length; i++) {
+                  var openDropdown = dropdowns[i];
+                  if (openDropdown.style.display === "block") {
+                      openDropdown.style.display = "none";
+                  }
+              }
+          }
+      }
+  </script>
+</body>
+</html>
+    

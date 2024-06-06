@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+    <link rel="stylesheet" href="/styles/font/font.css">
+    <link rel="stylesheet" href="/styles/pagina-curso/event.css">
+    <style>
+        /* Adicione o estilo para o menu dropdown */
+        .dropdown-menu {
+            display: none; /* Escondido por padrão */
+            position: absolute;
+            background-color: #273C4E;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+            right: 0; /* Posiciona o menu para a esquerda */
+        }
+
+        .dropdown-menu a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-menu a:hover {
+            background-color: #1f2c3c;
+        }
+    </style>
+</head>
+<body>
+    <nav class="nav-div">
+        <div class="div-logo-body">
+            <img src="/resources/bpk_logo.svg" alt="">
+        </div>
+        <div class="div-right">
+            <img id="menu-icon" src="/resources/menu.svg" alt="">
+            <ul class="dropdown-menu left-align" id="dropdown-menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Cursos</a></li>
+                <li><a href="#">Meus Cursos</a></li>
+                <li><a href="#">Eventos</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <h1>Eventos</h1> 
+        <hr>
+        <div class="div-separar">
+            <div class="img-sepair">
+                <img src="/resources/coming-soon.svg" width="100px" height="100px" alt="">
+            </div>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sint, quibusdam blanditiis minima ab illo harum at? Atque cumque ab suscipit saepe debitis, natus labore reprehenderit sed quo eaque quos!
+            </div>
+        </div>
+
+        <div class="div-separar">
+            <div class="img-sepair">
+                <img src="/resources/coming-soon.svg" width="100px" height="100px" alt="">
+            </div>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sint, quibusdam blanditiis minima ab illo harum at? Atque cumque ab suscipit saepe debitis, natus labore reprehenderit sed quo eaque quos!
+            </div>
+        </div>
+
+        <div class="div-separar">
+            <div class="img-sepair">
+                <img src="/resources/coming-soon.svg" width="100px" height="100px" alt="">
+            </div>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sint, quibusdam blanditiis minima ab illo harum at? Atque cumque ab suscipit saepe debitis, natus labore reprehenderit sed quo eaque quos!
+            </div>
+        </div>
+
+        <div class="div-separar">
+            <div class="img-sepair">
+                <img src="/resources/coming-soon.svg" width="100px" height="100px" alt="">
+            </div>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores sint, quibusdam blanditiis minima ab illo harum at? Atque cumque ab suscipit saepe debitis, natus labore reprehenderit sed quo eaque quos!
+            </div>
+        </div>
+
+        <div class="see-more">
+            <img src="/resources/see-more.svg" width="150px" height="50px" alt="">
+        </div>
+    </main>
+    <footer>
+        <div class="div-footer">
+            <img src="/resources/bpk_logo.svg" alt="">
+        </div>
+        <div class="div-direitos-reservados">
+            <p>BIOPARK © 2024 - Todos os Direitos Reservados</p>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("menu-icon").addEventListener("click", function() {
+            var dropdownMenu = document.getElementById("dropdown-menu");
+            if (dropdownMenu.style.display === "block") {
+                dropdownMenu.style.display = "none";
+            } else {
+                dropdownMenu.style.display = "block";
+            }
+        });
+
+        // Fechar o menu dropdown se o usuário clicar fora dele
+        window.onclick = function(event) {
+            if (!event.target.matches('#menu-icon')) {
+                var dropdowns = document.getElementsByClassName("dropdown-menu");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.style.display === "block") {
+                        openDropdown.style.display = "none";
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>

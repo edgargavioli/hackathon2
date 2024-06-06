@@ -1,4 +1,6 @@
 html, body {
+
+
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -6,152 +8,125 @@ html, body {
     font-size: medium;
 }
 
-
 @media (max-width: 480px) {
+    .Login_ADM {
+        flex-grow: 0;
+        border-radius: 20px;
+        background-color: #fff;
+    }
 
-    .firstline{
+    .firstline {
         display: flex;
         justify-content: space-between;
-  
     }
 
-    .arrowb{
+    img.arrow_back {
         justify-content: left;
-        padding-left: -3px ;
-        padding-top: 30px;
+        width: 24px;
+        height: 24px;
+        margin: 60px 0px 0px 30px;
+        object-fit: contain;
     }
 
-    .redelipse{
+    .Ellipsered {
         justify-content: right;
-        margin-left: 100px;
-        transform: scale(150%);
-        z-index: -1;
+        width: 239px;
+        height: 163px;
     }
 
-    .logobpk{
+    .logobox{
+        width: 100%;
         display: flex;
-        justify-content: center;
         align-items: center;
-        margin-top: -150px;
-        margin-bottom: 100px;
+        justify-content: center;
     }
 
+    img.image-1 {
+        width: 150px;
+        height: 150px;
+        margin: -40px 10px 100px 10px;
+        object-fit: contain;
+        border-radius: 15px;
+    }
+    
     .loginarea{
-        display: inline;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .form{
         display: grid;
         align-items: center;
         justify-content: center;
     }
 
-    .formcamp{
-        padding: 8px;
-        background-color: #EEEEEE;
-        border-color: #808080;
-        border-width: 1px;
-        border-radius: 10px;
-        width: 15em;
-        margin: 10px;
-        box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.281) ;
+    .formbox{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
-    .formtext{
+    .formcamp {
+        width: 250px;
+        height: 45px;
+        border-radius: 10px;
+        margin: 0px 0px 30px 0px;
+        padding: 5px 5px 5px 10px;
+        border: solid 1px #808080;
+        background-color: #eee;
+        box-shadow: 3px 6px 4px 0 rgba(0, 0, 0, 0.25);
+    }
+
+    ::placeholder{
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: normal;
+        letter-spacing: normal;
+        text-align: left;
+        color: #808080;
+    }
+
+    .textbuttonbox{
         display: flex;
-        align-items: center;
-        justify-content: right;
-        margin-right: 40px;
-        margin-top: -8px;
+        flex-direction: row-reverse;
+        margin: -20px 5px 0px 0px;
+
+    }
+
+    .textbutton{
         font-size: 12px;
         color: red;
     }
-
-    .buttom{
-        display: flex;
-        color: #EEEEEE;
-        background-color: #273c4e;
-        border-radius: 10px;
-        font-size: 18px;
-        height: 50px;
-        width: 250px;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .downelipse{
-        position: fixed;
-    }
-}
-
-@media (max-width: 1023px) {
-    .firstline{
-        display: flex;
-        justify-content: space-between;
-    }
-
-    .logobpk{
+    .buttonarea{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: -30px;
-        margin-bottom: 100px;
     }
 
-    .arrowb{
-        margin-left: 30px;
-        margin-top: 10px;
-    }
-
-    .redelipse{
-        justify-content: right;
-    }
-
-    .form{
-        display: grid;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .formcamp{
-        padding: 8px;
-        background-color: #EEEEEE;
-        border-color: #808080;
-        border-width: 1px;
-        border-radius: 10px;
-        width: 250px;
-        height: 30px;
-        margin: 10px;
-        box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.281) ;
-    }
-
-    input {
-        margin-top: 0.5rem;
-      }
-      
-      input::placeholder {
+    .button {
+        width: 13rem; /* 12.5 * 16px = 200px */
+        height: 3rem; /* 2.1875 * 16px = 35px */
+        background: #273C4E;
+        border-radius: 0.625rem; /* 0.625 * 16px = 10px */
+        color: white;
+        box-shadow: 3px 6px 4px 0 rgba(0, 0, 0, 0.25);
+        font-size: 1.1rem; /* 0.875 * 16px = 14px */
         font-weight: 100;
-        font-size: large;
-        color: #808080;
-      }
+        border: none;
+        cursor: pointer;
+        margin-top: 1.5625rem; /* 1.5625 * 16px = 25px */
+    }
 
-    /* .formtext{
-        display: flex;
-        justify-content: right;
-        margin: 1px;
-        margin-right: 20px;
-        font-size: 10px;
-        color: red;
-    } */
-
-    .downelipse{
+    .footerloginarea{
+        width: 480px;
+        height: 480px;
         position: fixed;
-        bottom: 0;
-        margin-bottom: -60px;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .footerlogin{
+        width: auto;
     }
 }
